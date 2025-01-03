@@ -7,10 +7,10 @@
     /* border: 1px solid red; */
 }
 
-body > :not(header){
+/* body > :not(header){
     padding: 0 160px;
     
-}
+} */
 
 /* Navigation */
 li, a{
@@ -37,13 +37,26 @@ header{
   
     background-image: url("../img/header-bg.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    
+    /* background-attachment: fixed; */
+    background-position: bottom;
+    /* background-size: cover; */
+    background-size: 1000px;
+    box-shadow: 5px 5px 20px rgb(174, 183, 186, 0.5);
     
 
-   
+    /* this lines of code make the background image blury */
+    /* filter: blur(0.7px); 
+     -webkit-filter: blur(0.3px); */
+
 }
+
+/* made the background color blury and add shadow */
+/* header:hover{
+    background-color: rgb(255, 255, 255, 0.5);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / .05); 
+    
+} */
 
 .logo{
     cursor: pointer;
@@ -58,6 +71,8 @@ header{
     border-radius: 50px;
     /* background-color: #f6f2f2; */
     background-color: #ffffff;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / .07); 
+
 }
 
 .nav-link li{
@@ -101,6 +116,7 @@ header{
     height: auto;
     align-items: center;
     text-align: center;
+    padding: 3rem 10rem 0rem 10rem;
 }
 
 #hero>img, #hero>h1, #hero>p, #hero>div {
@@ -118,6 +134,8 @@ header{
 
     padding: 2px;
     background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    /* pink shadow
+    box-shadow: 0 4px 55px rgba(149, 0, 162, .15); */
     cursor: pointer;
    
     
@@ -135,7 +153,7 @@ header{
     display: flex;
     gap: 1rem;
     width: auto;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     align-items: center;
     text-align: center;
 }
@@ -158,6 +176,7 @@ header{
     align-items: center;
     justify-content: center;
     gap: 60px;
+    padding: 10rem 10rem 0rem 10rem;
     /* margin: 70px 0; */
 }
 
@@ -174,6 +193,8 @@ header{
 .about-left> img{
     width: 300px;
     border-radius: 20px;
+    
+    
 }
 
 .about-right{
@@ -199,6 +220,7 @@ header{
     justify-content: space-between;
     gap: 30px;
     
+    
 }
 
 .about-bg>div>img{
@@ -215,4 +237,67 @@ header{
 }
 .about-bg>div>*{
     margin-top: 20px;
+}
+
+/* my skills section */
+
+#my-skills> h2{
+    padding: 0 30px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+#my-skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 10rem 10rem 0rem 10rem;
+
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.skill-format{
+    border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: .4s;
+    cursor: pointer;
+    box-shadow: 1px 2px 20px rgb(198, 192, 192, 0.5);
+}
+
+.skill-img{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+   
+}
+
+.skill-img img{
+    width: 150px;
+    height: 100px;
+    background-image: none;
+}
+
+.skill-format> h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+    background: linear-gradient(270deg, #DF8908 50%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
