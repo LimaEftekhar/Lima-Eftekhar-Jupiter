@@ -4,30 +4,76 @@
         <title>Lima Eftekhar's Portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
         <header>
-            <nav class="nav">
-                <div class="logo">
-                    <a class="nav-logo" href="#">Lima Eftekhar</a></li>
-                </div>
-                <div class="nav-lin">
-                    <ul class="nav-list">
-                        <li><a class="nav-list-link" href="#about">About</a></li>
-                        <li><a class="nav-list-link" href="#my-toolkit">My Toolkit</a></li>
-                        <li><a class="nav-list-link" href="#connect">Connect</a></li>
-                    </ul>
-                </div>
+            <a class="logo" href="#"><img src="./img/lima_black_logo1.png" alt="logo"></a>
+            <nav>
+                <ul class="nav-link">
+                    <li><a  href="#about">About</a></li>
+                    <li><a  href="#my-toolkit">My Toolkit</a></li>
+                    <li><a  href="#connect">Contact</a></li>
+                </ul>
             </nav>
+            <div class="contact">
+                <button>mode</button>
+                <a href="#contact">Contact</a>
+            </div> 
+            <!-- <ul class="contact">
+                <li><a  href="https://github.com/LimaEftekhar">GitHub</a></li>
+                <li> <a  href="www.linkedin.com/in/lima-eftekhar">LinkedIn</a></li>
+            </ul> -->
         </header>
         
-        <h1>Lima Eftekhar</h1>
+        <section id="hero">
+            <img src="./img/lima.jpg" alt="hero image">
+            <h1>Hi! I'm  Lima Eftekhar<br>
+            Frontend Develper</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="hero-action">
+                <a href="contact">Contact</a>
+                <a href="#">My resume</a>
+            </div>
+        </section>
         <section id="about">
             <h2>About</h2>
-            <p>Hi, I am a web developer skilled in <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. I enjoy creating responsive, user-friendly websites and am always eager to learn new technologies. Proficient in Git and GitHub, I manage code efficiently and collaborate effectively. Check out my projects and feel free to connect for collaborations! </p>
-        </section>
+            <div class="about-section">
+                <div class="about-left">
+                    <img src="./img/lima.jpg" alt="about me image">
+                </div>
+
+                <div class="about-right">
+                    <div class="about-desc">
+                        <p>Hi, I am a web developer skilled in <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. I enjoy creating responsive, user-friendly websites and am always eager to learn new technologies. Proficient in Git and GitHub, I manage code efficiently and collaborate effectively. Check out my projects and feel free to connect for collaborations!  </p> 
+                    </div>
+                    <div class="about-bg">
+                        <div>
+                            <img src="./img/edu-black.png" alt="">
+                            <h3>Education</h3>
+                            <p>B.Tech in Computer Science</p>
+                        </div>
+                        <div>
+                            <img src="./img/experiance-black.png" alt="">
+                            <h3>Experiance</h3>
+                            <p>5 years of Experiance in Tech</p>
+                        </div>
+                        <div>
+                            <img src="./img/project-black.png" alt="">
+                            <h3>projects</h3>
+                            <p>Built more than 3 projects</p>
+                        </div>
+                </div>
+                </div>
+                
+                
+            
+
+            </div>
+            
+         </section>
         
-        <section id="my-toolkit">
+        <section id="my-skills">
             <h2>My Toolkit</h2>
             <ul>
                 <li>HTML</li>
@@ -40,9 +86,11 @@
                 <li>Codeen</li>
             </ul>
         </section>
+
+
         
-        <section id="connect">
-            <h2>connect</h2>
+        <section id="contact">
+            <h2>Contact</h2>
             <ul>
                 <li><a href="https://github.com/LimaEftekhar">GitHub</a></li>
                 <li><a href="www.linkedin.com/in/lima-eftekhar">LinkedIn</a></li>
