@@ -258,17 +258,18 @@ header{
 }
 .skill-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
 
 .skill-format{
     border: solid 1px red;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     gap: 10px;
-    padding: 30px;
+    padding: 10px;
     border-radius: 10px;
     border: 2px solid white;
     transition: .4s;
@@ -287,13 +288,13 @@ header{
 }
 
 .skill-img img{
-    width: 150px;
-    height: 100px;
+    width: 30px;
+    height: 30px;
     background-image: none;
 }
 
 .skill-format> h3{
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     font-weight: 800;
     background: linear-gradient(270deg, #DF8908 50%, #B415FF 100%);
@@ -301,3 +302,145 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
+/* My work section */
+
+#my-work> h2{
+    padding: 0 30px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+
+#my-work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 10rem 10rem 0rem 10rem;
+
+}
+
+
+.work-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.work-format{
+    border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px 10px;
+    border-radius: 25px;
+    border: 1px solid gray;
+    /* border: 2px solid white; */
+    transition: .4s;
+    cursor: pointer;
+    /* box-shadow: 1px 2px 20px rgb(198, 192, 192, 0.5); */
+}
+
+.work-img{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+    gap: 10px;
+    border-radius: 25px;
+   
+}
+
+.work-img img{
+    width: 100%;
+    height: 250px;
+    /* background-image: none; */
+    /* border: 1px solid black; */
+    border-radius: 25px;
+
+}
+
+.work-format> h3{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 800;
+    /* background: linear-gradient(270deg, #DF8908 50%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.work-btn{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+    
+}
+
+.work-btn button{
+    width: 140px;
+    padding: 10px 5px;
+    margin: 5px 10px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    
+}
+
+.work-btn button>span{
+    margin: 5px;
+}
+.work-btn button i{
+    font-size: 1.5em;
+}
+
+
+/* Project Section */
+/* .project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.project-format{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+
+.project-format img{
+    width: 100%;
+    height: 400px;
+}
+
+.project-info{
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-hr{
+    display: flex;
+}
+
+.project-btn{
+    display: flex;
+    flex-direction: column;
+} */
+
