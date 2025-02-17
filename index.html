@@ -16,12 +16,27 @@
             <nav>
                 <ul class="nav-link">
                     <li><a  href="#about">About</a></li>
-                    <li><a  href="#my-toolkit">My Toolkit</a></li>
-                    <li><a  href="#connect">Contact</a></li>
+                    <li><a  href="#my-skills">Skill</a></li>
+                    <li><a  href="#my-work">Project</a></li>
                 </ul>
             </nav>
+
+
+
+             <!-- Hamburger menu button for mobile -->
+    <!-- <div class="hamburger-menu" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div> -->
+
+    <!-- End of Hamburger menu button for mobile -->
             <div class="contact">
-                <button>mode</button>
+                
+                <!-- <button>
+                    
+                    <i class="fa fa-moon-o fa-moon"  aria-hidden="true"></i>
+                </button> -->
                 <a href="#contact">Contact</a>
             </div> 
             <!-- <ul class="contact">
@@ -175,36 +190,60 @@
                     </div>
             </div>
             </div>
-
-
-
-
-            <!-- <div class="project-container">
-                <div class="project-format">
-                    
-                        <img src="./img/work/razia.png" alt="">
-                  
-                    <div class="project-info">
-                        <div class="project-h">
-                            <h3>Razia's Ray of Hope</h3>
-                        </div>
-                        <div class="project-btn">
-                            <a href="https://linakl19.github.io/rayOfHope/index.html"><button><i class="fa fa-solid fa-eye" style="color: #000000;" aria-hidden="true"></i><span>Live Demo</span></button></a>
-                            <a href="https://github.com/linakl19/rayOfHope"><button><i class="fa fa-github fa-custom" style="color: #000000;" aria-hidden="true"></i><span>GitHub</span></button></a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </section>
         
         <section id="contact">
-            <h2>Contact</h2>
-            <ul>
-                <li><a href="https://github.com/LimaEftekhar">GitHub</a></li>
-                <li><a href="www.linkedin.com/in/lima-eftekhar">LinkedIn</a></li>
-            </ul>
+            <h2>Get in touch</h2>
+                <div class="contact-container">
+                    <div class="contact-left">
+                        <h1>Let's talk</h1>
+                        <p>I'm currently avaliable to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact anytime.</p>
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <i class="fa fa-envelope" style="color: #000000;" aria-hidden="true"></i>
+                                <span>limaeftkhar@gmail.com</span>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                <span>+111-111-1111</span>
+                                
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span>OK, United States</span>
+                            </div>
+                            </div>
+                        </div>
+                        <form name="leave-message" class="contact-right">
+                            <!-- <input type="hidden" name="subject" value="New Submission from Portfolio"> -->
+                            <label for="usersName">Your Name</label>
+                            <input type="text" placeholder="Enter your name" id="usersName" name="usersName" required="true">
+                            <label for="usersEmail">Your Email</label>
+                            <input type="email" placeholder="Enter your email" id="usersEmail" name="usersEmail" required="true">
+                            <label for="usersMessage">Write your message here</label>
+                            <textarea name="usersMessage" rows="8" placeholder="Enter your message" id="usersMessage" name="usersMessage" required="true"></textarea>
+                            <button type="submit" value="submit" name="submit" class="contact-submit">Submit now</button>
+                            
+                        </form>
+                    </div>
+                </div>
+           
+        </section>
+        <section id="message-section" hidden>
+            <h2>Messages</h2>
+            
+                <ul id="messages">
+                
+                </ul>
+            
         </section>
 
-        <script src="js/index.js"></script>
+ <!-- <ul>
+                <li><a href="https://github.com/LimaEftekhar">GitHub</a></li>
+                <li><a href="www.linkedin.com/in/lima-eftekhar">LinkedIn</a></li>
+            </ul> -->
+
+
+        <script src="./js/index.js"></script>
     </body>
 </html>
