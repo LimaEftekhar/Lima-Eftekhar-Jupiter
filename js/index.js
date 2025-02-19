@@ -144,3 +144,48 @@ function makeRemoveButton(){
 }
 
 });
+
+// Create a fouch for github repos 
+const userName = 'LimaEftekhar';
+fetch(`https://api.github.com/users/${userName}/repos`)
+.then ((response) => { 
+    if (response.ok) {
+        return response.text();
+    }else {
+        throw new Error("failed to fetch repositories");
+    }
+})
+
+.then((data) => {
+    const repositories = JSON.parse(data);
+    console.log(repositories);
+    
+    // DOM Selection to select the projects section by id
+    const projectsection = document.getElementById("projects");
+    
+    // Create a ul in the projects section 
+    let projectList = document.createElement("ul"); 
+    projectsection.appendChild(projectList);
+    
+  for (let repository of repositories) {
+    
+    // Create a new list item element
+    let project = document.createElement("li");
+    
+    // Set the inner text of the project variable to the current repository's name 
+    project.innerText = repository.name;
+    
+    // Append the project element to the projectlist element
+
+    projectList.appendChild(project);
+
+  }
+})
+
+.catch((error) => {
+        if (error instanceof SyntaxError){
+            console.error("Unparsable response from server");
+        }else{
+    console.error("Error fetching data: ", error.message);
+        }
+});
